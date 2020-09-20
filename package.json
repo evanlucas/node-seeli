@@ -12,7 +12,10 @@
     "lint": "eslint ./",
     "lint:fix": "npm run lint -- --fix",
     "check": "check-pkg",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "npm:clean": "rm -rf node_modules docs/node_modules"
   },
   "eslintConfig": {
     "root": true,
